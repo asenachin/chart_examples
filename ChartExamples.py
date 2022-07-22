@@ -5,6 +5,7 @@ import tkinter as tk
 # Импорт внешних файлов
 import chart1
 import chart2
+import chart3
 
 # Функция закрытия программы
 def do_close():
@@ -30,8 +31,15 @@ lblChart1.place(x=170, y=120)
 btnChart2 = tk.Button(window, text="График 2", font=('Helvetica', 10, 'bold'), command=chart2.plot_chart)
 btnChart2.place(x=40, y=165, width=90, height=30)
 
-lblChart2 = tk.Label(text="График синуса matplotlib")
+lblChart2 = tk.Label(text="Нормальное распределение")
 lblChart2.place(x=170, y=170)
+
+# Добавление кнопки и метки для графика 2
+btnChart3 = tk.Button(window, text="График 3", font=('Helvetica', 10, 'bold'), command=chart3.plot_chart)
+btnChart3.place(x=40, y=210, width=90, height=30)
+
+lblChart3 = tk.Label(text="Диаграмма barplot")
+lblChart3.place(x=170, y=220)
 
 # Добавление кнопки закрытия программы
 btnClose = tk.Button(window, text="Закрыть", font=('Helvetica', 10, 'bold'), command=do_close)
