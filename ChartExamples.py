@@ -35,7 +35,7 @@ lblChart2.place(x=150, y=170)
 # Добавление кнопки и метки для графика 3
 btnChart3 = tk.Button(window, text="График 3", font=('Helvetica', 10, 'bold'), command=chart3.plot_chart)
 btnChart3.place(x=40, y=210, width=90, height=30)
-lblChart3 = tk.Label(text="Диаграмма barplot")
+lblChart3 = tk.Label(text="Диаграмма Seaborn (barplot)")
 lblChart3.place(x=150, y=220)
 
 # Добавление кнопки и метки для графика 4
@@ -45,9 +45,9 @@ lblChart4 = tk.Label(text="Нормальное распределение - 3 �
 lblChart4.place(x=150, y=270)
 
 # Добавление кнопки и метки для графика 5
-btnChart5 = tk.Button(window, text="График 5", font=('Helvetica', 10, 'bold'))
+btnChart5 = tk.Button(window, text="График 5", font=('Helvetica', 10, 'bold'), command=chart3.plot_chart2)
 btnChart5.place(x=40, y=310, width=90, height=30)
-lblChart5 = tk.Label(text="Описание графика")
+lblChart5 = tk.Label(text="Гистограмма Seaborn (histplot)")
 lblChart5.place(x=150, y=320)
 
 # Добавление кнопки и метки для графика 6
