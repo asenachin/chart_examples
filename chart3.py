@@ -25,6 +25,7 @@ def plot_chart2():
     
     df_normal_a = pd.DataFrame(data=normal_data_a, columns=['score']).assign(group='Group A')
     
-    sns.histplot(data=df_normal_a, x='score', bins=50)
+    sns.histplot(data=df_normal_a, x='score', bins=50, kde=True)
+    # ~ kde - ядерная оценка плотности
     
     plt.show()
